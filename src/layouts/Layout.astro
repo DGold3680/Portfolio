@@ -6,7 +6,7 @@ export interface Props {
   title?: string;
 }
 const { title = "Gold.js" } = Astro.props as Props;
-const navigationPage = Astro.url.pathname.includes("/navigation"); 
+const navigationPage = Astro.url.pathname.includes("/navigation");
 console.log(Astro);
 ---
 
@@ -25,16 +25,19 @@ console.log(Astro);
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <ViewTransitions transition:animate="none"/>
+    <ViewTransitions transition:animate="none" />
   </head>
-  <body class="font-normal font-sans text-main bg-bg">
+  <body
+    class="font-normal font-sans text-main bg-bg"
+    transition:animate="slide"
+  >
     {navigationPage ? null : <Navbar />}
-    <main class="px-6 md:px-12" transition:animate="slide">
+    <main class="px-6 md:px-12">
       <slot />
     </main>
+    <style is:global>
+      html {
+      }
+    </style>
   </body>
-  <style is:global>
-    html {
-    }
-  </style>
 </html>

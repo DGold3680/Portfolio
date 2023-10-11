@@ -4,7 +4,7 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
 export default function Sidebar() {
   return (
     <div className="py-6 h-screen text-sm text-white text-opacity-50" >
-      <a href="/" className="flex justify-end mb-4 ">
+      <a href="/" className="float-right inline-block justify-end mb-4 ">
         <svg
           width="14"
           height="14"
