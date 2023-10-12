@@ -2,9 +2,9 @@ import BtnMain from "./Btn-main.jsx";
 export default function Hero() {
   return (
     <div className="text-sm basis-1/2 sm:pr-12 my-auto pb-6">
-      <div class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0">
+      <div class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0 w-full">
         <p>Let's</p>
-        <p class="indent-20 sm:indent-60 md:indent-72">Build</p>
+        <p class="indent-16 overflow-hidden sm:indent-60 md:indent-72">Build</p>
       </div>
 
       <p className="text-sm text-sec font-semibold mb-4">Hi, My name is </p>
