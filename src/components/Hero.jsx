@@ -2,9 +2,9 @@ import BtnMain from "./Btn-main.jsx";
 export default function Hero() {
   return (
     <div className="text-sm basis-1/2 sm:pr-12 my-auto pb-6">
-      <div class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0 w-full">
+      <div className="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0 w-full">
         <p>Let's</p>
-        <p class="indent-16 overflow-hidden sm:indent-60 md:indent-72">Build</p>
+        <p className="indent-20 overflow-hidden sm:indent-60 md:indent-72 mt-6">Build</p>
       </div>
 
       <p className="text-sm text-sec font-semibold mb-4">Hi, My name is </p>
@@ -25,11 +25,11 @@ export default function Hero() {
       <div className="flex justify-between w-full max-w-sm sm:w-fit">
         <a
           href="#contact"
-          class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold hover:bg-bgSec active:bg-bgSec focus:bg-bgSec focus:text-sec hover:text-sec active:text-sec hover:shadow-md hover:shadow-neutral-900"
+          className="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold hover:bg-bgSec active:bg-bgSec focus:bg-bgSec focus:text-sec hover:text-sec active:text-sec hover:shadow-md hover:shadow-neutral-900"
         >
           Contact Me
         </a>
-        <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
+        <div className="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
           <BtnMain>Resume</BtnMain>
         </div>
       </div>

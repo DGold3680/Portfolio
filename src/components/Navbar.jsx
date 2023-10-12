@@ -20,7 +20,7 @@ const Navbar = () => {
               </li>
             );
           })}
-          <li class="ml-10">
+          <li className="ml-10">
             <BtnMain>Resume</BtnMain>
           </li>
         </ul>
