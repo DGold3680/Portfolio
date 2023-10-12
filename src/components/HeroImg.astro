@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import heroImg from "../assets/heroImg.png";
+---
+
+<div class="hidden lg:flex basis-1/2 justify-between lg:pl-12">
+  <div class="basis-5/6">
+    <Image src={heroImg} alt="" class="h-full" />
+  </div>
+  <div
+    class="bg-bgSec shrink basis-1/6 shadow-xl shadow-neutral-900 [height:96%] flex justify-end rounded-[72px] px-4"
+  >
+    <p
+      class="inline-block [writing-mode:vertical-lr] text-5xl xl:text-6xl font-bold text-tert opacity-20 mx-auto my-auto"
+    >
+      Let's Build
+    </p>
+  </div>
+</div>

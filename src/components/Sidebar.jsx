@@ -41,7 +41,7 @@ export default function Sidebar() {
       </ul>
       <div className="text-center my-5">
         <p className="text-5xl opacity-10 mb-3">Say Hello</p>
-        <p>Hello@gold.dev</p>
+        <p className="focus:text-sec hover:text-sec active:text-sec">adscoversion@gmail.com</p>
       </div>
       <div className="flex justify-around mt-20 mb-4 ">
         <img src="instagram.svg" alt="" />

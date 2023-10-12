@@ -1,9 +1,14 @@
 import BtnMain from "./Btn-main.jsx";
 export default function Hero() {
   return (
-    <div className="text-sm">
+    <div className="text-sm basis-1/2 sm:pr-12 my-auto pb-6">
+      <div class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0">
+        <p>Let's</p>
+        <p class="indent-20 sm:indent-60 md:indent-72">Build</p>
+      </div>
+
       <p className="text-sm text-sec font-semibold mb-4">Hi, My name is </p>
-      <h1 className="text-5xl text-white font-bold">David Paul Afodi</h1>
+      <h1 className="text-3xl md:text-5xl text-white font-bold">David Paul Afodi</h1>
       <p className="text-base mb-7">Web Developer | Technical writer</p>
       <p className="leading-7 mb-7">
         I’m a skilled full stack web developer in Nigeria, with over 3 years of
@@ -18,17 +23,16 @@ export default function Hero() {
         <img className="inline-block" src="linkedIn.svg" alt="" />
       </div>
       <div className="flex justify-between w-full max-w-sm sm:w-fit">
-      <a
-        href="#contact"
-        class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold"
-      >
-        Contact Me
-      </a>
-      <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
-        <BtnMain>Resume</BtnMain>
+        <a
+          href="#contact"
+          class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold hover:bg-bgSec active:bg-bgSec focus:bg-bgSec focus:text-sec hover:text-sec active:text-sec hover:shadow-md hover:shadow-neutral-900"
+        >
+          Contact Me
+        </a>
+        <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
+          <BtnMain>Resume</BtnMain>
+        </div>
       </div>
-      </div>
-     
     </div>
   );
 }
