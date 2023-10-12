@@ -10,6 +10,7 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
 
 ---
 
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,7 +30,7 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
   </head>
   <body
     class="font-normal font-sans text-main bg-bg"
-    transition:animate={slide({ direction: 'alternate' })}
+    transition:animate={slide({ duration: '0.05s' })}
   >
     {navigationPage ? null : <Navbar />}
     <main class="px-6 md:px-12">
