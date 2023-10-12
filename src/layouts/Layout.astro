@@ -29,7 +29,7 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
   </head>
   <body
     class="font-normal font-sans text-main bg-bg"
-    transition:animate={slide({ direction: 'reverse' })}
+    transition:animate={slide({ direction: 'alternate' })}
   >
     {navigationPage ? null : <Navbar />}
     <main class="px-6 md:px-12">
