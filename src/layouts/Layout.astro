@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions, slide } from "astro:transitions";
+import { ViewTransitions, slide,fade } from "astro:transitions";
 import Navbar from "../components/Navbar";
 // import Sidebar from "../components/Sidebar";
 export interface Props {
@@ -10,14 +10,14 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
 
 const anim = {
   old: {
-    name: 'fadeIn',
+    name: 'slideIn',
     duration: '0.2s',
     easing: 'linear',
     fillMode: 'forwards',
   },
   new: {
-    name: 'fadeOut',
-    duration: '0.3s',
+    name: 'slideOut',
+    duration: '0.2s',
     easing: 'linear',
     fillMode: 'backwards',
   }
