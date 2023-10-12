@@ -1,4 +1,5 @@
 import Logo from "./Logo.jsx";
+import BtnMain from "./Btn-main.jsx";
 
 const Navbar = () => {
   const navLinks = ["About", "Project", "Blog", "Contact"];
@@ -19,10 +20,8 @@ const Navbar = () => {
               </li>
             );
           })}
-          <li>
-            <button className="ml-10 py-2 px-6 border-[3px] rounded-lg shadow-md shadow-neutral-900 border-sec text-sec font-semibold hover:border-white active:border-white focus:border-white hover:text-white active:text-white focus:text-white">
-              Resume
-            </button>
+          <li class="ml-10">
+            <BtnMain>Resume</BtnMain>
           </li>
         </ul>
       </div>

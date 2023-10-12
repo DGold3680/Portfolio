@@ -12,7 +12,8 @@ module.exports = {
         main: "#949494",
         sec: "#E76F00",
         tert: "#F2B932",
-        bg: "#333333",
+        bg: "#222222",
+        bgSec: "#333333"
       },
       opacity: {
         10: "0.1",
