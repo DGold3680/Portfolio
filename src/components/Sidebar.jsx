@@ -4,8 +4,8 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
 export default function Sidebar() {
   return (
     <div className="py-6 h-screen text-sm text-white text-opacity-50">
-      <div className="flex justify-end">
-        <a href="/" className="p-3">
+      <div className="flex justify-end h-8 items-center">
+        <a href="/" className="p-2">
           <svg
             width="14"
             height="14"
@@ -20,7 +20,7 @@ export default function Sidebar() {
           </svg>
         </a>
       </div>
-      <div className="text-center mt-2 mb-5">
+      <div className="text-center mb-5">
         <Logo className="mb-3" />
         <p>Web Developer | Technical writer</p>
       </div>

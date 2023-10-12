@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         main: "#949494",
         sec: "#E76F00",
+        tert: "#F2B932",
         bg: "#333333",
       },
       opacity: {
