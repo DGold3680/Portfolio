@@ -11,20 +11,20 @@ export default function Hero() {
         passionate about creating stunning websites that not only look great but
         also provide an exceptional user experience.
       </p>
-      <div className="flex w-1/2 sm:w-1/3 lg:w-2/5 justify-between mb-7">
+      <div className="flex max-w-sm sm:w-1/3 lg:w-2/5 justify-between mb-7">
         <img className="inline-block" src="instagram.svg" alt="" />
         <img className="inline-block" src="github.svg" alt="" />
         <img className="inline-block" src="twitter.svg" alt="" />
         <img className="inline-block" src="linkedIn.svg" alt="" />
       </div>
-      <div className="flex sm:w-fit">
+      <div className="flex justify-between w-full max-w-sm sm:w-fit">
       <a
         href="#contact"
-        class="sm:inline-block max-w-prose bg-sec py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold"
+        class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold"
       >
         Contact Me
       </a>
-      <div class=" sm:inline-block lg:hidden ml-4">
+      <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
         <BtnMain>Resume</BtnMain>
       </div>
       </div>
