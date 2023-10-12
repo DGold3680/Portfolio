@@ -10,16 +10,16 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
 
 const anim = {
   old: {
-    name: 'slideIn',
+    name: 'slide',
     duration: '0.2s',
     easing: 'linear',
-    fillMode: 'forwards',
+    direction:"normal"
   },
   new: {
-    name: 'slideOut',
+    name: 'slide',
     duration: '0.2s',
     easing: 'linear',
-    fillMode: 'backwards',
+    direction:"reverse"
   }
 };
 
