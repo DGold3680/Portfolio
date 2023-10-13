@@ -1,7 +1,7 @@
 
 export default function () {
   return (
-    <div className="nav-logo text-white text-2xl">
+    <h1 className="nav-logo text-white text-2xl">
     <span className="font-bold">Dev</span>
     <span>
       dav
@@ -16,6 +16,6 @@ export default function () {
         <circle cx="7.5" cy="8" r="7.5" fill="#E76F00" />
       </svg>
     </span>
-  </div>
+  </h1>
   )
 }
