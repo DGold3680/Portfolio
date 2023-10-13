@@ -7,7 +7,7 @@ export default function H2({ children }) {
           {children}
         </h2>
       </div>
-      <div>
+      <div className="mt-16">
         <h2 className="md:hidden text-4xl font-extrabold text-white opacity-20 ">{children}</h2>
       </div>
     </div>
