@@ -10,9 +10,7 @@ const projects = await getCollection("project");
   projects.map((project) => {
     let { title, url, details, coverImg, tags } = project.data;
     return (
-      <li
-        style="width: 225.333px;"
-        class="scale-y-[.9] scale-x-[.90] slider__frame glide__slide glide__slide--active"
+      <a href="" class="scale-[.9] slider__frame glide__slide glide__slide--active"
       >
         <div
           style="box-shadow:0 0 8px rgba(70, 69, 69, 0.6);"
@@ -73,7 +71,7 @@ const projects = await getCollection("project");
             })}
           </div>
         </div>
-      </li>
+      </a>
     );
   })
 }
