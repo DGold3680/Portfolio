@@ -1,10 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero.astro";
 import HeroImg from "../components/HeroImg.astro";
-import H2 from "../components/H2";
+import H2 from "../components/H2.astro";
 import ProjectCardSlider from "../components/Project-card-slider.astro";
-import ProjectCardRow from "../components/Project-card-row.astro";
+import ProjectCardRow from "../components/Project-card-row.jsx";
+import Img from "../components/Img.astro";
+import cover from "../assets/cover.png"
+import { getCollection } from "astro:content";
+const projects = await getCollection("project");
 ---
 
 <Layout>
@@ -18,12 +22,14 @@ import ProjectCardRow from "../components/Project-card-row.astro";
         <H2>PROJECTS.</H2>
       </div>
       <div class="pl-6 md:pl-6 hidden lg:block">
-        <ProjectCardSlider/>
+        <ProjectCardSlider projects={projects} />
       </div>
       <div class="lg:hidden">
-        <ProjectCardRow/>
+        <ProjectCardRow projects={projects} client:load >
+         <Img imgSrc={cover} imgAlt={"Article cover Image"} imgClass={"w-full h-36"}/>
+        </ProjectCardRow>
       </div>
     </div>
-    
   </div>
 </Layout>
+

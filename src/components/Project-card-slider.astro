@@ -1,10 +1,11 @@
 ---
-import ProjectCard from "./Project-card.astro";
-
+import ProjectCard from "./Project-card.jsx";
+import Img from "./Img.astro";
+import cover from "../assets/cover.png"
 // Required Core Stylesheet
 import "./../../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
 import "./../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-
+const {projects}=Astro.props
 ---
 
 <div class="text-sm">
@@ -17,7 +18,20 @@ import "./../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
         class="slider__slides glide__slides p-4"
         style="transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2353.33px; transform: translate3d(0px, 0px, 0px);"
       >
-        <ProjectCard />
+      {projects?.map((project) => {
+        let { title, url, details, coverImg, tags } = project.data;
+        return (
+          <ProjectCard
+            title={title}
+            url={url}
+            details={details}
+            coverImg={coverImg}
+            tags={tags}
+          >
+          <Img imgSrc={cover} imgAlt={"Article cover Image"} imgClass={"w-full h-36"}/>
+          </ProjectCard>
+        );
+      })}
       </ul>
     </div>
   </div>

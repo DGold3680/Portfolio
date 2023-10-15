@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions, slide } from "astro:transitions";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.astro";
 // import Sidebar from "../components/Sidebar";
 export interface Props {
   title?: string;
@@ -18,7 +18,7 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet"
@@ -28,13 +28,15 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
     <ViewTransitions transition:animate="none" />
   </head>
   <body
-    class="font-normal font-sans text-main bg-bg"
+    class="font-normal font-sans text-main bg-bg 2xl:flex flex-col items-center"
     transition:animate={slide({ duration: "0.05s" })}
   >
-    {navigationPage ? null : <Navbar />}
-    <main >
-      <slot />
-    </main>
+    <div class="xl:max-w-screen-2xl">
+      {navigationPage ? null : <Navbar />}
+      <main>
+        <slot />
+      </main>
+    </div>
     <style is:global>
       html {
       }
