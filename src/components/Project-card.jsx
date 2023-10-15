@@ -3,12 +3,12 @@ import cover from "../assets/cover.png";
 
 export default function ProjectCard({children,title, url, details, coverImg, tags}) {
   return (
-    <a href="" class="scale-[.9] slider__frame glide__slide glide__slide--active">
+    <a href="" className="scale-[.9] slider__frame glide__slide glide__slide--active">
   <div
     style={{ boxShadow: '0 0 8px rgba(70, 69, 69, 0.6)' }}
-    class="text-sm flex flex-col px-6 py-4 rounded-2xl max-w-[550px]"
+    className="text-sm flex flex-col px-6 py-4 rounded-2xl max-w-[550px]"
   >
-    <div class="mb-5">
+    <div className="mb-5">
       <svg
         width="45"
         height="45"
@@ -22,11 +22,11 @@ export default function ProjectCard({children,title, url, details, coverImg, tag
           fill="#222222"></path>
       </svg>
     </div>
-    <div class="flex items-center mb-1">
-      <span class="inline-block mr-5 text-white text-base font-sm">
+    <div className="flex items-center mb-1">
+      <span className="inline-block mr-5 text-white text-base font-sm">
         {title}
       </span>
-      <span class="inline-block">
+      <span className="inline-block">
         <svg
           width="16"
           height="14"
@@ -40,21 +40,21 @@ export default function ProjectCard({children,title, url, details, coverImg, tag
         </svg>
       </span>
     </div>
-    <div class="mb-7 text-main/50">
+    <div className="mb-7 text-main/50">
       <p>{url}</p>
     </div>
-    <div class="mb-5">
+    <div className="mb-5">
       <p>{details}</p>
     </div>
-    <div class="mb-5">
+    <div className="mb-5">
       {children}
     </div>
-    <div class="-mr-1.5">
+    <div className="-mr-1.5">
       {
         tags?.map((tag, i) => {
           if (i < 3) {
             return (
-              <div class="text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
+              <div key={tag} className="text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
                 {tag}
               </div>
             );
