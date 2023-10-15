@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions, slide,fade } from "astro:transitions";
+import { ViewTransitions, slide } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
 // import Sidebar from "../components/Sidebar";
 export interface Props {
@@ -29,7 +29,7 @@ const navigationPage = Astro.url.pathname.includes("/navigation");
   </head>
   <body
     class="font-normal font-sans text-main bg-bg 2xl:flex flex-col items-center"
-    transition:animate={fade({ duration: "0.4s" })}
+    transition:animate={slide({ duration: "0.4s" })}
   >
     <div class="xl:max-w-screen-2xl">
       {navigationPage ? null : <Navbar />}
