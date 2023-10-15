@@ -13,6 +13,9 @@ export default function ProjectCardRow(props) {
   const seeAll = () => {
     setcount(projects.length);
   };
+  const seeLess = () => {
+    setcount(2);
+  };
   const { children, projects } = props;
   return (
     <div>
@@ -58,8 +61,15 @@ export default function ProjectCardRow(props) {
           See All
         </button>
       )}
-      {count > projects.length && (
-       null
+      {count >= projects.length && (
+        <button
+        onClick={() => {
+          seeLess();
+        }}
+        className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+      >
+        See Less
+      </button>
       )}
     </div>
   );
