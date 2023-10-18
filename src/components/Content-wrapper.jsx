@@ -5,9 +5,9 @@ import ArticleCardMobile from "./Article-card-mobile.jsx";
 export default function ProjectWrapper({ contents, children, contentType }) {
   const renderContent = (info) => {
     if (contentType === "project") {
-      return <ProjectCard info={info} children={children}></ProjectCard>;
+      return <ProjectCard key={info.title} info={info} children={children}></ProjectCard>;
     }else if (contentType === "article"){
-      return <ArticleCardMobile info={info} children={children}></ArticleCardMobile>;
+      return <ArticleCardMobile key={info.title} info={info} children={children}></ArticleCardMobile>;
     }
   };
   return (
