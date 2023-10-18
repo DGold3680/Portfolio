@@ -15,7 +15,6 @@ readTime: 6
 
 **Author:** Photography Enthusiast
 
-![Photography Enthusiast](authorImg)
 
 **Published Date:** November 5, 2023
 

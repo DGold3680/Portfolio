@@ -15,7 +15,6 @@ readTime: 17
 
 **Author:** Astronomy Enthusiast
 
-![Astronomy Enthusiast](authorImg)
 
 **Published Date:** October 20, 2023
 

@@ -14,8 +14,6 @@ readTime: 7
 
 **Author:** Master Chef
 
-![Master Chef](authorImg)
-
 **Published Date:** November 10, 2023
 
 [Content of the article goes here...]

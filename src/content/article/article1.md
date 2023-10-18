@@ -15,7 +15,6 @@ readTime: 10
 
 **Author:** John Doe
 
-![John Doe](authorImg)
 
 **Published Date:** October 15, 2023
 

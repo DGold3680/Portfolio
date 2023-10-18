@@ -15,7 +15,6 @@ readTime: 15
 
 **Author:** Nutrition Expert
 
-![Nutrition Expert](authorImg)
 
 **Published Date:** October 25, 2023
 

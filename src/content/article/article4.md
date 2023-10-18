@@ -14,7 +14,6 @@ readTime: 5
 
 **Author:** Globe-Trotter
 
-![Globe-Trotter](authorImg)
 
 **Published Date:** October 30, 2023
 
