@@ -4,11 +4,12 @@ import Hero from "../components/Hero.astro";
 import HeroImg from "../components/HeroImg.astro";
 import H2 from "../components/H2.astro";
 import ProjectCardSlider from "../components/Project-card-slider.astro";
-import ProjectCardRow from "../components/Project-card-row.jsx";
+import ContentWrapper from "../components/Content-wrapper.jsx";
 import Img from "../components/Img.astro";
-import cover from "../assets/cover.png"
+import cover from "../assets/cover.png";
 import { getCollection } from "astro:content";
 const projects = await getCollection("project");
+const articles = await getCollection("article");
 ---
 
 <Layout>
@@ -17,19 +18,34 @@ const projects = await getCollection("project");
       <Hero />
       <HeroImg />
     </div>
-    <div class="my-8 md:mt-16 md:mb-12">
+    <div id="projects" class="my-8 md:mt-16 md:mb-12">
       <div class="px-6 md:px-12">
-        <H2>PROJECTS.</H2>
+        <H2>
+          <p slot="screensm">PROJECTS.</p>
+          <p slot="screenxl">PROJECTS.</p>
+        </H2>
       </div>
       <div class="pl-6 md:pl-6 hidden lg:block">
         <ProjectCardSlider projects={projects} />
       </div>
       <div class="lg:hidden">
-        <ProjectCardRow projects={projects} client:load >
-         <Img imgSrc={cover} imgAlt={"Article cover Image"} imgClass={"w-full h-36"}/>
-        </ProjectCardRow>
+        <ContentWrapper contentType="project" contents={projects} client:load>
+          <Img imgSrc={cover} imgAlt={"coverImg"} />
+        </ContentWrapper>
+      </div>
+    </div>
+    <div id="blogs" class="my-8 md:mt-16 md:mb-12">
+      <div class="px-6 md:px-12">
+        <H2>
+          <p slot="screensm">Articles.</p>
+          <p slot="screenxl">Published Articles</p>
+        </H2>
+      </div>
+      <div class="lg:flex my-4 px-6 md:px-12">
+        <ContentWrapper contentType="article" contents={articles} client:load>
+          <Img imgSrc={cover} imgAlt={"coverImg"} />
+        </ContentWrapper>
       </div>
     </div>
   </div>
 </Layout>
-

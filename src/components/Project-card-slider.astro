@@ -19,14 +19,10 @@ const {projects}=Astro.props
         style="transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 2353.33px; transform: translate3d(0px, 0px, 0px);"
       >
       {projects?.map((project) => {
-        let { title, url, details, coverImg, tags } = project.data;
+        let info = project.data;
         return (
           <ProjectCard
-            title={title}
-            url={url}
-            details={details}
-            coverImg={coverImg}
-            tags={tags}
+            info={info}
           >
           <Img imgSrc={cover} imgAlt={"Article cover Image"} imgClass={"w-full h-36"}/>
           </ProjectCard>
