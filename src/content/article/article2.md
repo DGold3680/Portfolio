@@ -12,7 +12,6 @@ readTime: 17
 
 # Exploring the Cosmos
 
-![Cover Image](coverImg)
 
 **Author:** Astronomy Enthusiast
 

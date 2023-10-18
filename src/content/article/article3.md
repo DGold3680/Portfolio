@@ -12,7 +12,6 @@ readTime: 15
 
 # Healthy Eating Habits
 
-![Cover Image](coverImg)
 
 **Author:** Nutrition Expert
 

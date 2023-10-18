@@ -12,7 +12,6 @@ readTime: 6
 
 # Art of Photography
 
-![Cover Image](coverImg)
 
 **Author:** Photography Enthusiast
 

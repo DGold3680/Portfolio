@@ -12,8 +12,6 @@ readTime: 7
 
 # Cooking Delicious Meals
 
-![Cover Image](coverImg)
-
 **Author:** Master Chef
 
 ![Master Chef](authorImg)

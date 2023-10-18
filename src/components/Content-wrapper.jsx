@@ -7,7 +7,7 @@ export default function ProjectWrapper({ contents, children, contentType }) {
     if (contentType === "project") {
       return <ProjectCard key={info.title} info={info} children={children}></ProjectCard>;
     }else if (contentType === "article"){
-      return <ArticleCardMobile key={info.title} info={info} children={children}></ArticleCardMobile>;
+      return <ArticleCardMobile key={info.title} info={info}></ArticleCardMobile>;
     }
   };
   return (

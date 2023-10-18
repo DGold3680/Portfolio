@@ -12,7 +12,6 @@ readTime: 10
 
 # Sample Markdown Article
 
-![Cover Image](coverImg)
 
 **Author:** John Doe
 

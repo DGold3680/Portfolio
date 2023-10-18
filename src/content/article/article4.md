@@ -12,8 +12,6 @@ readTime: 5
 
 # Traveling the World
 
-![Cover Image](coverImg)
-
 **Author:** Globe-Trotter
 
 ![Globe-Trotter](authorImg)
