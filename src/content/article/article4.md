@@ -8,6 +8,7 @@ tags: ["Travel", "Adventure"]
 url: https://www.example3.org
 excerpt: "Dive into the mission and vision of Example 3, a non-profit organization dedicated to making a positive impact on society. Learn about their projects and initiatives."
 readTime: 5
+tagColor: "#007CED"
 ---
 
 # Traveling the World

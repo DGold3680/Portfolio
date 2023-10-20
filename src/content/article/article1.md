@@ -8,6 +8,7 @@ tags: ["Technology", "Web Development"]
 url: https://www.example1.com
 excerpt: "Visit Example 1's website to explore a wide range of products and services, including electronics, fashion, home decor, and more. Experience exceptional quality and great customer service."
 readTime: 10
+tagColor: "#007CED"
 ---
 
 # Sample Markdown Article

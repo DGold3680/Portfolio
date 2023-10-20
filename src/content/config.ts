@@ -24,7 +24,8 @@ const articleCollection = defineCollection({
     excerpt: z.string(),
     tags: z.array(z.string()),
     date: z.date(),
-    readTime:z.number()
+    readTime:z.number(),
+    tagColor:z.string()
   }),
 });
 

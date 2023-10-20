@@ -10,8 +10,9 @@ export default function ArticleCardMobile({ info = {} }) {
     readTime,
   } = info;
 
+
   return (
-    <div className="sm:hidden mb-6">
+    <div className="mb-6">
       <p className="mb-4 text-main/50 text-xs">Posted: {`${date.toDateString()}`} | {readTime} mins read</p>
       <a
         href={url}

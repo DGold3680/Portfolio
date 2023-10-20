@@ -1,8 +1,6 @@
 import { useState } from "react";
-import ProjectCard from "./Project-card.jsx";
-import ArticleCardMobile from "./Article-card-mobile";
 
-export default function CardRow(props) {
+export default function ProjectCardRow(props) {
   const {contents,renderContent } = props;
   const [count, setcount] = useState(2);
 

@@ -8,6 +8,7 @@ tags: ["Astronomy", "Space"]
 url: https://www.example2.net
 excerpt: "Explore the innovative world of Example 2, where cutting-edge technology meets creativity. From advanced gadgets to artistic designs, there's something for everyone."
 readTime: 17
+tagColor: "#F2B932"
 ---
 
 # Exploring the Cosmos

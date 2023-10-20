@@ -8,6 +8,7 @@ tags: ["Photography", "Art"]
 url: https://www.example4.io
 excerpt: "Join the vibrant community at Example 4 and be part of exciting events, workshops, and discussions. Connect with like-minded individuals and expand your horizons."
 readTime: 6
+tagColor: "#F2B932"
 ---
 
 # Art of Photography

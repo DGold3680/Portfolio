@@ -8,6 +8,7 @@ tags: ["Cooking", "Culinary"]
 url: https://www.example5.dev
 excerpt: "At Example 5, creativity knows no bounds. Explore a diverse range of projects spanning art, technology, and more. Unleash your creativity and share your ideas."
 readTime: 7
+tagColor: "#F80063"
 ---
 
 # Cooking Delicious Meals
