@@ -27,7 +27,7 @@ export default function ArticleCardRow(props) {
           onClick={() => {
             seeMore();
           }}
-          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl hover:text-white active:text-white"
         >
           See More
         </button>
@@ -35,7 +35,7 @@ export default function ArticleCardRow(props) {
       {count >= 4 && contents.length > count && (
         <a
           href="/blog"
-          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl hover:text-white active:text-white"
         >
           See All
         </a>

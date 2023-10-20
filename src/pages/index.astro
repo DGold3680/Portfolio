@@ -7,6 +7,7 @@ import ProjectCardSlider from "../components/Project-card-slider.astro";
 import ProjectWrapper from "../components/Project-wrapper.jsx";
 import ArticleWrapper from "../components/Article-wrapper.jsx";
 import Img from "../components/Img.astro";
+import SolarShow from "../components/Solar-show.astro";
 import cover from "../assets/cover.png";
 import { getCollection } from "astro:content";
 const projects = await getCollection("project");
@@ -47,6 +48,9 @@ const articles = await getCollection("article");
           <Img imgSrc={cover} imgAlt={"coverImg"} />
         </ArticleWrapper>
       </div>
+    </div>
+    <div class="my-40">
+      <SolarShow/>
     </div>
   </div>
 </Layout>

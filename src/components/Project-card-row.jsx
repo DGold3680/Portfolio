@@ -32,7 +32,7 @@ export default function ProjectCardRow(props) {
           onClick={() => {
             seeMore();
           }}
-          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl hover:text-white active:text-white"
         >
           See More
         </button>
@@ -42,7 +42,7 @@ export default function ProjectCardRow(props) {
           onClick={() => {
             seeAll();
           }}
-          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl hover:text-white active:text-white"
         >
           See All
         </button>
@@ -52,7 +52,7 @@ export default function ProjectCardRow(props) {
           onClick={() => {
             seeLess();
           }}
-          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl"
+          className="block bg-bgSec text-white/50 text-sm px-4 py-1.5 w-fit mx-auto rounded-3xl hover:text-white active:text-white"
         >
           See Less
         </button>

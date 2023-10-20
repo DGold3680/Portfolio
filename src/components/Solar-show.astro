@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets";
+import dp from "../assets/dp.png";
+const OuterTags = [
+  "JavaScript",
+  "ReactJs",
+  "AstroJs",
+  "Firebase",
+  "NextJs",
+  "NodeJs",
+  "ExpressJs",
+  "MongoDB",
+];
+const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
+---
+
+<div class="canvas flex justify-center">
+  <div class="outer">
+    {
+      OuterTags.map((tag) => {
+        return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
+      })
+    }
+    <div class="inner">
+      {
+        InnerTags.map((tag) => {
+          return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
+        })
+      }
+      <Image src={dp} alt="display picture" class="core" />
+    </div>
+  </div>
+</div>
+<style>
+  .canvas {
+    position: relative;
+  }
+  .core {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: rotates 15s linear reverse infinite;
+  }
+
+  .inner {
+    width: 360px;
+    height: 360px;
+    border: 1px solid #949494;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .outer {
+    width: 630px;
+    height: 630px;
+    border: 1px solid #949494;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotates 15s linear infinite;
+    box-sizing: border-box;
+  }
+
+  .textBox-Position {
+    position: absolute;
+  }
+  .inner :nth-child(1) {
+    animation: rotates reverse 15s linear infinite;
+  }
+  .inner :nth-child(2) {
+    animation: rotates reverse 15s linear infinite;
+  }
+  .inner :nth-child(3) {
+    animation: rotates reverse 15s linear infinite;
+  }
+  .inner :nth-child(4) {
+    animation: rotates reverse 15s linear infinite;
+  }
+
+  .outer :nth-child(1) {
+    top: -10px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(2) {
+    bottom: -10px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(3) {
+    right: -30px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(4) {
+    left: -25px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(5) {
+    top: 50px;
+    right: 50px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(6) {
+    left: 50px;
+    bottom: 50px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(7) {
+    top: 50px;
+    left: 50px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  .outer :nth-child(8) {
+    bottom: 50px;
+    right: 50px;
+    animation: rotates reverse 15s linear infinite;
+  }
+  @keyframes rotates {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+</style>
