@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import dp from "../assets/dp.png";
+import H2 from "./H2.astro";
 const OuterTags = [
   "JavaScript",
   "ReactJs",
@@ -14,8 +15,9 @@ const OuterTags = [
 const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
 ---
 
-<div class="canvas flex justify-center">
-  <div class="outer">
+<div class="canvas flex justify-center items-center mt-[200px]">
+  <div class="text-[115px] font-extrabold text-white opacity-20">STACK</div>
+  <div class="outer">  
     {
       OuterTags.map((tag) => {
         return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
@@ -36,15 +38,15 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
     position: relative;
   }
   .core {
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     animation: rotates 15s linear reverse infinite;
   }
 
   .inner {
-    width: 360px;
-    height: 360px;
+    width: 400px;
+    height: 400px;
     border: 1px solid #949494;
     border-radius: 50%;
     display: flex;
