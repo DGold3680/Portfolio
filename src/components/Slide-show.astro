@@ -4,26 +4,26 @@ const OuterTags = [
   "ExpressJs",
   "MongoDB",
   "GraphQL",
-  "Helmet",
-  "TypeScript",
-  "Figma",
-];
-const InnerTags = [
   "AstroJs",
   "Firebase",
   "NextJs",
+  "ReactJs",
+];
+const InnerTags = [
+  "HTML",
   "CSS",
+  "JavaScript",
+  "TypeScript",
+  "SASS",
   "Bootstrap",
   "Tailwind",
-  "SASS",
-  "JavaScript",
-  "ReactJs",
+  "Figma",
 ];
 ---
 
 <div class="flex flex-col">
-  <div class="overflow-hidden flex marquee">
-    <div class="topSlide flex whitespace-no-wrap mb-10">
+  <div class="overflow-hidden flex marquee-container">
+    <div class="topSlide flex marquee whitespace-no-wrap">
       <div class="slide">
         {
           InnerTags.map((tag) => {
@@ -49,8 +49,8 @@ const InnerTags = [
     </div>
   </div>
 
-  <div class="overflow-hidden flex marquee">
-    <div class="bottomSlide flex whitespace-no-wrap">
+  <div class="overflow-hidden flex marquee-container">
+    <div class="bottomSlide flex marquee whitespace-no-wrap">
       <div class="slide">
         {
           OuterTags.map((tag) => {
@@ -77,38 +77,24 @@ const InnerTags = [
   </div>
 </div>
 <style>
+  .marquee-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
   .marquee {
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .topSlide,
-  .bottomSlide {
-    display: block;
-    width: 200%;
-    height: 40px;
-    position: absolute;
-    overflow: hidden;
-    animation: marquee 7s linear infinite;
-  }
-
-  .bottomSlide {
-    animation: marquee 7s linear infinite reverse;
-  }
-
-  .slide {
-    float: left;
-    width: 50%;
+    font-family: sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    animation: marquee 10s infinite linear; /* notice the infinite */
   }
 
   @keyframes marquee {
     0% {
-      left: 0;
+      transform: translateX(0);
     }
     100% {
-      left: -100%;
+      transform: translateX(-50%);
     }
   }
 </style>
