@@ -1,7 +1,7 @@
 import Tags from "./Tags";
 
 export default function ArticleCard({ info = {}, children }) {
-  const { title, date, tags, url, excerpt, readTime,tagColor } = info;
+  const { title, date, tags, url, excerpt, readTime, tagColor } = info;
 
   return (
     <div
@@ -10,7 +10,10 @@ export default function ArticleCard({ info = {}, children }) {
     >
       <div className="basis-full ">
         <div className="flex items-center mb-4">
-          <span style={{backgroundColor:`${tagColor}`}} className={`inline-block rounded-full w-5 h-5 mr-5`}></span>
+          <span
+            style={{ backgroundColor: `${tagColor}` }}
+            className={`inline-block rounded-full w-5 h-5 mr-5`}
+          ></span>
           <span className=" text-main/50 text-xs">
             Posted: {`${date.toDateString()}`} | {readTime} mins read
           </span>
@@ -23,7 +26,7 @@ export default function ArticleCard({ info = {}, children }) {
           {title}
         </a>
         <p className="mb-4 text-sm font-light">{excerpt}</p>
-        <div className="mb-4">
+        <div className="mb-4 -mr-1.5">
           <Tags tags={tags} />
         </div>
       </div>

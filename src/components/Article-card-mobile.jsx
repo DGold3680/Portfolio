@@ -21,7 +21,7 @@ export default function ArticleCardMobile({ info = {} }) {
         {title}
       </a>
       <p className="mb-4 text-sm font-light">{excerpt}</p>
-      <div className="mb-4">
+      <div className="mb-4 -mr-1.5">
         <Tags tags={tags} />
       </div>
     </div>

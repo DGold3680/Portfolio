@@ -8,6 +8,7 @@ import ProjectWrapper from "../components/Project-wrapper.jsx";
 import ArticleWrapper from "../components/Article-wrapper.jsx";
 import Img from "../components/Img.astro";
 import SolarShow from "../components/Solar-show.astro";
+import SlideShow from "../components/Slide-show.astro";
 import cover from "../assets/cover.png";
 import { getCollection } from "astro:content";
 const projects = await getCollection("project");
@@ -49,8 +50,13 @@ const articles = await getCollection("article");
         </ArticleWrapper>
       </div>
     </div>
-    <div class="hidden md:flex justify-center mt-[250px] ">
-      <SolarShow/>
+    <div>
+      <div class="hidden md:flex justify-center mt-[250px]">
+        <SolarShow />
+      </div>
+      <div class="md:hidden">
+        <SlideShow />
+      </div>
     </div>
   </div>
 </Layout>

@@ -1,8 +1,8 @@
-export default function Tags({tags}) {
+export default function Tags({tags,no=3}) {
   return (
-    <div className="-mr-1.5">
+    <>
       {tags?.map((tag, i) => {
-        if (i < 3) {
+        if (i < no) {
           return (
             <div
               key={tag}
@@ -13,6 +13,6 @@ export default function Tags({tags}) {
           );
         }
       })}
-    </div>
+    </>
   );
 }

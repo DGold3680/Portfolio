@@ -1,0 +1,113 @@
+---
+const OuterTags = [
+  "NextJs",
+  "NodeJs",
+  "ExpressJs",
+  "MongoDB",
+  "GraphQL",
+  "Helmet",
+  "TypeScript",
+  "Figma",
+];
+const InnerTags = [
+  "HTMl/CSS",
+  "Bootstrap",
+  "Tailwind",
+  "SASS",
+  "JavaScript",
+  "ReactJs",
+  "AstroJs",
+  "Firebase",
+];
+---
+
+<div class="flex flex-col">
+  <div class="overflow-hidden flex marquee">
+    <div class="topSlide flex whitespace-no-wrap">
+      <div class="slide">
+        {
+          InnerTags.map((tag) => {
+            return (
+              <span class="tagSlide box-border text-sm font-light mb-2 mr-3 ml-1 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
+                {tag}
+              </span>
+            );
+          })
+        }
+      </div>
+      <div class="slide">
+        {
+          InnerTags.map((tag) => {
+            return (
+              <span class="tagSlide box-border text-sm font-light mb-2 mr-3 ml-1 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
+                {tag}
+              </span>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden flex marquee">
+    <div class="bottomSlide flex whitespace-no-wrap">
+      <div class="slide">
+        {
+          OuterTags.map((tag) => {
+            return (
+              <span class="tagSlide box-border text-sm font-light mb-2 mr-3 ml-1 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
+                {tag}
+              </span>
+            );
+          })
+        }
+      </div>
+      <div class="slide">
+        {
+          OuterTags.map((tag) => {
+            return (
+              <span class="tagSlide box-border text-sm font-light mb-2 mr-3 ml-1 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">
+                {tag}
+              </span>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .marquee {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topSlide,.bottomSlide {
+    display: block;
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 7s linear infinite;
+  }
+
+  .bottomSlide {
+    animation: marquee 7s linear infinite reverse;
+  }
+
+  .slide {
+    float: left;
+    width: 50%;
+  }
+
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+</style>

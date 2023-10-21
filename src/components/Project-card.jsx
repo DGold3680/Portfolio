@@ -52,7 +52,9 @@ export default function ProjectCard({ info = {}, children }) {
           <p>{details}</p>
         </div>
         <div className="mb-5">{children}</div>
-        <Tags tags={tags}/>
+        <div className="-mr-1.5">
+          <Tags tags={tags} />
+        </div>
       </div>
     </a>
   );

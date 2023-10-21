@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import dp from "../assets/dp.png";
-import H2 from "./H2.astro";
+
 const OuterTags = [
   "JavaScript",
   "ReactJs",
@@ -16,14 +16,14 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
 ---
 
 <div class="canvas flex justify-center items-center mt-[200px]">
-  <div class="text-[115px] font-extrabold text-white opacity-20">STACK</div>
-  <div class="outer">  
+  <div class="text-[130px] font-extrabold text-white opacity-20">Stack</div>
+  <div class="outerSolar">  
     {
       OuterTags.map((tag) => {
         return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
       })
     }
-    <div class="inner">
+    <div class="innerSolar">
       {
         InnerTags.map((tag) => {
           return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
@@ -38,16 +38,16 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
     position: relative;
   }
   .core {
-    width: 115px;
-    height: 115px;
+    width: 112px;
+    height: 112px;
     border-radius: 50%;
     animation: rotates 15s linear reverse infinite;
   }
 
-  .inner {
+  .innerSolar {
     width: 400px;
     height: 400px;
-    border: 1px solid #949494;
+    border:1px solid rgba(148, 148, 148, 0.5);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
     position: relative;
     box-sizing: border-box;
   }
-  .outer {
+  .outerSolar {
     width: 630px;
     height: 630px;
     border: 1px solid #949494;
@@ -71,56 +71,56 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
   .textBox-Position {
     position: absolute;
   }
-  .inner :nth-child(1) {
-    animation: rotates reverse 15s linear infinite;
+  .innerSolar :nth-child(1) {
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .inner :nth-child(2) {
-    animation: rotates reverse 15s linear infinite;
+  .inneSolarr :nth-child(2) {
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .inner :nth-child(3) {
-    animation: rotates reverse 15s linear infinite;
+  .innerSolar :nth-child(3) {
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .inner :nth-child(4) {
-    animation: rotates reverse 15s linear infinite;
+  .innerSolar :nth-child(4) {
+    animation: Solarrotates reverse 15s linear infinite;
   }
 
-  .outer :nth-child(1) {
+  .outerSolar :nth-child(1) {
     top: -10px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(2) {
+  .outerSolar :nth-child(2) {
     bottom: -10px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(3) {
+  .outerSolar :nth-child(3) {
     right: -30px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(4) {
+  .outerSolar :nth-child(4) {
     left: -25px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(5) {
+  .outerSolar :nth-child(5) {
     top: 50px;
     right: 50px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(6) {
+  .outerSolar :nth-child(6) {
     left: 50px;
     bottom: 50px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(7) {
+  .outerSolar :nth-child(7) {
     top: 50px;
     left: 50px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  .outer :nth-child(8) {
+  .outerSolar :nth-child(8) {
     bottom: 50px;
     right: 50px;
-    animation: rotates reverse 15s linear infinite;
+    animation: Solarrotates reverse 15s linear infinite;
   }
-  @keyframes rotates {
+  @keyframes Solarrotates {
     0% {
       rotate: 0deg;
     }
