@@ -50,7 +50,7 @@ const InnerTags = [
   </div>
 
   <div class="overflow-hidden flex marquee-container mb-5">
-    <div class="bottomSlide flex marquee whitespace-no-wrap">
+    <div class="bottomSlide flex reverse-marquee whitespace-no-wrap">
       <div class="slide">
         {
           OuterTags.map((tag) => {
@@ -87,6 +87,12 @@ const InnerTags = [
     color: #fff;
     white-space: nowrap;
     animation: marquee 10s infinite linear; /* notice the infinite */
+  }
+  .reverse-marquee {
+    font-family: sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    animation: marquee 10s infinite reverse linear; /* notice the infinite */
   }
 
   @keyframes marquee {
