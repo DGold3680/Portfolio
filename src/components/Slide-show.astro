@@ -1,6 +1,5 @@
 ---
 const OuterTags = [
-  "NextJs",
   "NodeJs",
   "ExpressJs",
   "MongoDB",
@@ -10,14 +9,15 @@ const OuterTags = [
   "Figma",
 ];
 const InnerTags = [
-  "HTMl/CSS",
+  "AstroJs",
+  "Firebase",
+  "NextJs",
+  "CSS",
   "Bootstrap",
   "Tailwind",
   "SASS",
   "JavaScript",
   "ReactJs",
-  "AstroJs",
-  "Firebase",
 ];
 ---
 
@@ -50,7 +50,7 @@ const InnerTags = [
   </div>
 
   <div class="overflow-hidden flex marquee">
-    <div class="bottomSlide flex whitespace-no-wrap ">
+    <div class="bottomSlide flex whitespace-no-wrap">
       <div class="slide">
         {
           OuterTags.map((tag) => {
@@ -84,7 +84,8 @@ const InnerTags = [
     position: relative;
   }
 
-  .topSlide,.bottomSlide {
+  .topSlide,
+  .bottomSlide {
     display: block;
     width: 200%;
     height: 40px;
