@@ -15,18 +15,18 @@ const OuterTags = [
 const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
 ---
 
-<div class="canvas flex justify-center items-center mt-[200px]">
+<div class="canvas flex justify-center items-center my-[100px]">
   <div class="text-[130px] font-extrabold text-white opacity-20">Stack</div>
   <div class="outerSolar">  
     {
       OuterTags.map((tag) => {
-        return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
+        return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec/50 text-tert py-1.5 px-4 inline-block">{tag}</div>;
       })
     }
     <div class="innerSolar">
       {
         InnerTags.map((tag) => {
-          return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec text-tert py-1.5 px-4 inline-block">{tag}</div>;
+          return <div class="textBox-Position box-border text-sm font-light mb-2 mr-1 ml-0 mt-0 rounded-3xl bg-bgSec/50 text-tert py-1.5 px-4 inline-block">{tag}</div>;
         })
       }
       <Image src={dp} alt="display picture" class="core" />
@@ -36,6 +36,8 @@ const InnerTags = ["HTMl/CSS", "Bootstrap", "Tailwind", "SASS"];
 <style>
   .canvas {
     position: relative;
+    width: 630px;
+    height: 630px;
   }
   .core {
     width: 112px;

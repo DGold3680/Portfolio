@@ -9,6 +9,7 @@ import ArticleWrapper from "../components/Article-wrapper.jsx";
 import Img from "../components/Img.astro";
 import SolarShow from "../components/Solar-show.astro";
 import SlideShow from "../components/Slide-show.astro";
+import ContactForm from "../components/Contact-form.astro";
 import cover from "../assets/cover.png";
 import { getCollection } from "astro:content";
 const projects = await getCollection("project");
@@ -51,7 +52,7 @@ const articles = await getCollection("article");
       </div>
     </div>
     <div>
-      <div class="hidden md:flex justify-center mt-[250px]">
+      <div class="hidden md:flex justify-center ">
         <SolarShow />
       </div>
       <div class="md:hidden">
@@ -62,6 +63,9 @@ const articles = await getCollection("article");
         </div>
         <SlideShow />
       </div>
+    </div>
+    <div class="px-6 md:px-12 mt-16">
+      <ContactForm/>
     </div>
   </div>
 </Layout>
