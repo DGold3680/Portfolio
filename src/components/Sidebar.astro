@@ -1,5 +1,10 @@
 ---
 import Logo from "./Logo.astro";
+import { Image } from "astro:assets";
+import linkedIn from "../assets/linkedIn.svg";
+import twitter from "../assets/twitter.svg";
+import github from "../assets/github.svg";
+import instagram from "../assets/instagram.svg";
 const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
 ---
 
@@ -47,9 +52,12 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
     </p>
   </div>
   <div class="flex justify-around mt-20 mb-4">
-    <img src="instagram.svg" alt="" />
-    <img src="github.svg" alt="" />
-    <img src="twitter.svg" alt="" />
-    <img src="linkedIn.svg" alt="" />
+    <Image src={instagram} alt="Instagram icon" />
+
+    <Image src={github} alt="Github Icon" />
+
+    <Image src={twitter} alt="Twitter Icon" />
+
+    <Image src={linkedIn} alt="LinkedIn Icon" />
   </div>
 </div>

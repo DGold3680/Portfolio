@@ -1,7 +1,48 @@
 ---
-
+import { Image } from "astro:assets";
+import dp from "../assets/dp.png";
+import linkedIn from "../assets/linkedIn.svg";
+import twitter from "../assets/twitter.svg";
+import github from "../assets/github.svg";
+import instagram from "../assets/instagram.svg";
 ---
-<div>
-    <span>© 2022 All right reserved.
+
+<div class="border-t-[0.5px] border-white/50 py-6">
+  <div
+    class="text-xs flex flex-col sm:flex-row justify-between items-center text-white/50 px-6 md:px-12"
+  >
+    <span class="flex items-center w-full justify-between sm:w-fit sm:justify-center">
+      <span class="hidden md:flex items-center  lg:mr-4"
+        ><Image
+          src={dp}
+          alt="display picture"
+          width={50}
+          class={"lg:mr-2 sm::mr-6"}
+        /></span
+      >
+      <span class="hidden sm:flex items-center lg:mr-4"
+        ><Image
+          src={instagram}
+          alt="Instagram icon"
+          width={22}
+          class={"lg:mr-2 sm:mr-6"}
+        />
+        <p class="sm:hidden lg:block mr-2">Instagram</p></span
+      >
+      <span class="flex items-center lg:mr-4"
+        ><Image src={github} alt="Github Icon" width={22} class={"lg:mr-2 sm:mr-6"} />
+        <p class="sm:hidden lg:block mr-2">Github</p>
+      </span>
+      <span class="flex items-center lg:mr-4"
+        ><Image src={twitter} alt="Twitter Icon" width={22} class={"lg:mr-2 sm:mr-6"} />
+        <p class="sm:hidden lg:block mr-2">Twitter</p>
+      </span>
+      <span class="flex items-center lg:mr-4">
+        <Image src={linkedIn} alt="LinkedIn Icon" width={22} class={"lg:mr-2 sm:mr-6"} />
+        <p class="sm:hidden lg:block mr-2">LinkedIn</p>
+      </span>
     </span>
+    <span class="my-4 sm:my-0">Designer:Patric</span>
+    <span>© 2022 All right reserved.</span>
+  </div>
 </div>

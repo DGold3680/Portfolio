@@ -18,12 +18,12 @@ const articles = await getCollection("article");
 ---
 
 <Layout>
-  <div>
-    <div id="about" class="lg:flex my-4 px-6 md:px-12">
+  <main>
+    <section id="about" class="lg:flex my-4 px-6 md:px-12">
       <Hero />
       <HeroImg />
-    </div>
-    <div id="projects" class="my-8 md:mt-16 md:mb-12">
+    </section>
+    <section id="projects" class="my-8 md:mt-16 md:mb-12">
       <div class="px-6 md:px-12">
         <H2>
           <p slot="screensm">PROJECTS.</p>
@@ -38,8 +38,8 @@ const articles = await getCollection("article");
           <Img imgSrc={cover} imgAlt={"coverImg"} />
         </ProjectWrapper>
       </div>
-    </div>
-    <div id="blogs" class="my-8 md:mt-16 md:mb-12">
+    </section>
+    <section id="blogs" class="my-8 md:mt-16 md:mb-12">
       <div class="px-6 md:px-12">
         <H2>
           <p slot="screensm">ARTICLES.</p>
@@ -51,8 +51,8 @@ const articles = await getCollection("article");
           <Img imgSrc={cover} imgAlt={"coverImg"} />
         </ArticleWrapper>
       </div>
-    </div>
-    <div>
+    </section>
+    <section>
       <div class="hidden md:flex justify-center ">
         <SolarShow />
       </div>
@@ -64,12 +64,12 @@ const articles = await getCollection("article");
         </div>
         <SlideShow />
       </div>
-    </div>
-    <div class="px-6 md:px-12 mt-16">
+    </section>
+    <section class="px-6 md:px-12 mt-16">
       <ContactForm/>
-    </div>
-    <div class="px-6 md:px-12 mt-16">
+    </section>
+    <footer class="mt-16 md:mt-28 lg:mt-36">
       <Footer/>
-    </div>
-  </div>
+    </footer>
+  </main>
 </Layout>
