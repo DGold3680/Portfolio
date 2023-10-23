@@ -1,37 +1,49 @@
 ---
 import BtnMain from "./Btn-main.astro";
+import { Image } from "astro:assets";
+import linkedIn from "../assets/linkedIn.svg";
+import twitter from "../assets/twitter.svg";
+import github from "../assets/github.svg";
+import instagram from "../assets/instagram.svg";
 ---
-    <div class="text-sm basis-1/2 sm:pr-12 my-auto pb-6">
-      <div class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0 w-full">
-        <p>Let's</p>
-        <p class="indent-20 overflow-hidden sm:indent-60 md:indent-72 mt-6">Build</p>
-      </div>
 
-      <p class="text-sm text-sec font-semibold mb-4">Hi, My name is </p>
-      <h1 class="text-3xl md:text-5xl text-white font-bold">David Paul Afodi</h1>
-      <p class="text-base mb-7">Web Developer | Technical writer</p>
-      <p class="leading-7 mb-7">
-        I’m a skilled full stack web developer in Nigeria, with over 3 years of
-        experience in the field. From the beginning of my career, I have been
-        passionate about creating stunning websites that not only look great but
-        also provide an exceptional user experience.
-      </p>
-      <div class="flex max-w-sm sm:w-1/3 lg:w-2/5 justify-between mb-7">
-        <img class="inline-block" src="instagram.svg" alt="" />
-        <img class="inline-block" src="github.svg" alt="" />
-        <img class="inline-block" src="twitter.svg" alt="" />
-        <img class="inline-block" src="linkedIn.svg" alt="" />
-      </div>
-      <div class="flex justify-between w-full max-w-sm sm:w-fit">
-        <a
-          href="#contact"
-          class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold hover:bg-bgSec active:bg-bgSec focus:bg-bgSec focus:text-sec hover:text-sec active:text-sec hover:shadow-md hover:shadow-neutral-900"
-        >
-          Contact Me
-        </a>
-        <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
-          <BtnMain>Resume</BtnMain>
-        </div>
-      </div>
+<div class="text-sm basis-1/2 sm:pr-12 my-auto pb-6">
+  <div
+    class="lg:hidden absolute font-black text-9xl opacity-5 -mt-8 -ml-2 left-0 w-full"
+  >
+    <p>Let's</p>
+    <p class="indent-20 overflow-hidden sm:indent-60 md:indent-72 mt-6">
+      Build
+    </p>
+  </div>
+
+  <p class="text-sm text-sec font-semibold mb-4">Hi, My name is</p>
+  <h1 class="text-3xl md:text-5xl text-white font-bold">David Paul Afodi</h1>
+  <p class="text-base mb-7">Web Developer | Technical writer</p>
+  <p class="leading-7 mb-7">
+    I’m a skilled full stack web developer in Nigeria, with over 3 years of
+    experience in the field. From the beginning of my career, I have been
+    passionate about creating stunning websites that not only look great but
+    also provide an exceptional user experience.
+  </p>
+  <div class="flex max-w-sm sm:w-1/3 lg:w-2/5 justify-between mb-7">
+    <Image src={instagram} alt="Instagram icon" />
+
+    <Image src={github} alt="Github Icon" />
+
+    <Image src={twitter} alt="Twitter Icon" />
+
+    <Image src={linkedIn} alt="LinkedIn Icon" />
+  </div>
+  <div class="flex justify-between w-full max-w-sm sm:w-fit">
+    <a
+      href="#contact"
+      class="flex justify-center grow sm:inline-block max-w-prose bg-sec py-4 sm:py-2 lg:py-3 px-8 border-[3px] rounded-lg border-sec text-white font-semibold hover:bg-bgSec active:bg-bgSec focus:bg-bgSec focus:text-sec hover:text-sec active:text-sec hover:shadow-md hover:shadow-neutral-900"
+    >
+      Contact Me
+    </a>
+    <div class="flex justify-end grow sm:inline-block lg:hidden sm:ml-4">
+      <BtnMain>Resume</BtnMain>
     </div>
-
+  </div>
+</div>
