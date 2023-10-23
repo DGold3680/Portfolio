@@ -35,7 +35,7 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
         return (
           <li>
             <a
-              href="#about"
+              href={`/${navLink}`}
               class="nav-link mx-6 hover:text-sec active:text-sec focus:text-sec"
             >
               {navLink}
@@ -53,11 +53,8 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
   </div>
   <div class="flex justify-around mt-20 mb-4">
     <Image src={instagram} alt="Instagram icon" />
-
     <Image src={github} alt="Github Icon" />
-
     <Image src={twitter} alt="Twitter Icon" />
-
     <Image src={linkedIn} alt="LinkedIn Icon" />
   </div>
 </div>
