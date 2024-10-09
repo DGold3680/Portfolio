@@ -35,7 +35,15 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
         return (
           <li>
             <a
-              href={`/${navLink}`}
+              href={
+                navLink == "Contact Me"
+                  ? "/#contact"
+                  : navLink == "My Projects"
+                    ? "/#project"
+                    : navLink == "My Blog"
+                      ? "/#blog"
+                      : `/#${navLink}`
+              }
               class="nav-link mx-6 hover:text-sec active:text-sec focus:text-sec"
             >
               {navLink}
@@ -48,13 +56,35 @@ const navLinks = ["About", "My Projects", "My Blog", "Contact Me"];
   <div class="text-center my-5">
     <p class="text-5xl opacity-10 mb-3">Say Hello</p>
     <p class="focus:text-sec hover:text-sec active:text-sec">
-      adscoversion@gmail.com
+      <a
+        href="mailto:adscoversion@gmail.com"
+        class="focus:text-sec hover:text-sec active:text-sec"
+      >
+        adscoversion@gmail.com
+      </a>
     </p>
   </div>
   <div class="flex justify-around mt-20 mb-4">
-    <Image src={instagram} alt="Instagram icon" />
-    <Image src={github} alt="Github Icon" />
-    <Image src={twitter} alt="Twitter Icon" />
-    <Image src={linkedIn} alt="LinkedIn Icon" />
+    <a
+      href="https://github.com/DGold3680"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image src={github} alt="Github Icon" /></a
+    >
+    <a
+      href="https://x.com/goldnodejs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image src={twitter} alt="Twitter Icon" /></a
+    >
+    <a
+      href="https://www.linkedin.com/in/david-paul-afodi-2b8180265"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image src={linkedIn} alt="LinkedIn Icon" />
+    </a>
   </div>
 </div>

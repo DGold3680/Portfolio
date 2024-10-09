@@ -15,7 +15,7 @@ const navLinks = ["About", "Project", "Blog", "Contact"];
           return (
             <li>
               <a
-                href={`/#${navLink}`}
+                href={`/#${navLink.toLowerCase()}`}
                 class="nav-link sm:mx-3 mx-6 hover:text-white active:text-white focus:text-white"
               >
                 {navLink}
@@ -25,7 +25,11 @@ const navLinks = ["About", "Project", "Blog", "Contact"];
         })
       }
       <li class="ml-10">
-        <BtnMain>Resume</BtnMain>
+        <li class="ml-10">
+          <a href="https://docs.google.com/document/d/1_G6-iSyikpirH0tUwm5CEIaurGWmfJ-nJd8oUNBbfUQ/edit?tab=t.0/view" target="_blank" rel="noopener noreferrer">
+            <BtnMain>Resume</BtnMain>
+          </a>
+        </li>
       </li>
     </ul>
   </div>

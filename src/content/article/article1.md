@@ -1,6 +1,6 @@
 ---
-title: "Sample Markdown Article"
-author: "John Doe"
+title: "Processing CSV files with Papaparse"
+author: "David Paul-Afodi"
 authorImg: "/images/john-doe.jpg"
 coverImg: "/images/cover-image.jpg"
 date: 2022-09-15
