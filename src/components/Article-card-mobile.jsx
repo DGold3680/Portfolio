@@ -8,6 +8,7 @@ export default function ArticleCardMobile({ info = {} }) {
     url,
     excerpt,
     readTime,
+    coverImg
   } = info;
 
 

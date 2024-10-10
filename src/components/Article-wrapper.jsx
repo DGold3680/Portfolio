@@ -5,21 +5,13 @@ import ArticleCardMobile from "./Article-card-mobile.jsx";
 export default function ArticleWrapper({ articles, children }) {
   const renderContent = (info) => {
     return (
-      <ArticleCard
-        key={info.title}
-        info={info}
-        children={children}
-      ></ArticleCard>
+      <a key={info.title} href={info.url} rel="noopener noreferrer" target="_blank">
+        <ArticleCard info={info}></ArticleCard>
+      </a>
     );
   };
   const renderMobileContent = (info) => {
-    return (
-      <ArticleCardMobile
-        key={info.title}
-        info={info}
-        children={children}
-      ></ArticleCardMobile>
-    );
+    return <ArticleCardMobile key={info.title} info={info}></ArticleCardMobile>;
   };
   return (
     <div>

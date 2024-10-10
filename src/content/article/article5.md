@@ -1,14 +1,14 @@
 ---
-title: "Art of Photography"
-author: "Photography Enthusiast"
-authorImg: "/images/photography-enthusiast.jpg"
-coverImg: "/images/photography-cover.jpg"
-date: 2023-02-15
-tags: ["Photography", "Art"]
-url: https://www.example4.io
-excerpt: "Join the vibrant community at Example 4 and be part of exciting events, workshops, and discussions. Connect with like-minded individuals and expand your horizons."
+title: "The Top Ten Rendering Patterns in Modern Web Development"
+author: "David Paul-Afodi"
+authorImg: "/images/john-doe.jpg"
+coverImg: "/cover_images/The_Top_Ten_Rendering_Patterns_in_Modern_Web_Development.png"
+date: 2023-10-05
+tags: ["Frontend", "FE Frameworks","Top 10"]
+url: https://blog.openreplay.com/the-top-10-rendering-patterns-in-modern-web-development/
+excerpt: "How to render your website most optimally? This question has many answers, and this article introduces the ten most commonly used rendering design patterns applied by current frameworks, so you’ll be able to pick whatever suits you best."
 readTime: 6
-tagColor: "#F2B932"
+tagColor: "#F80063"
 ---
 
 # Art of Photography

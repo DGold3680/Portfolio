@@ -1,13 +1,13 @@
 ---
-title: "Exploring the Cosmos"
-author: "Astronomy Enthusiast"
-authorImg: "/images/astronomy-enthusiast.jpg"
-coverImg: "/images/astronomy-cover.jpg"
-date: 2022-10-20
-tags: ["Astronomy", "Space"]
-url: https://www.example2.net
-excerpt: "Explore the innovative world of Example 2, where cutting-edge technology meets creativity. From advanced gadgets to artistic designs, there's something for everyone."
-readTime: 17
+title: "Understanding and Using Abort Controllers in JavaScript"
+author: "David Paul-Afodi"
+authorImg: "/images/john-doe.jpg"
+coverImg: "/cover_images/Understanding_and_Using_Abort_Controllers_in_JavaScript.png"
+date: 2024-03-22
+tags: ["Javascript", "Asnchronous Js", "Ajax",]
+url: https://blog.openreplay.com/abort-controllers-in-javascript/
+excerpt: "In modern web development, managing asynchronous tasks is crucial for creating responsive and efficient applications. Asynchronous operations, such as fetching data from a server or executing time-consuming computations, often require the ability to cancel or abort them before completion. Here, Abort Controllers come into play, as this article will show."
+readTime: 10
 tagColor: "#F2B932"
 ---
 

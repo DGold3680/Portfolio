@@ -17,7 +17,7 @@ const articles = await getCollection("article");
       <HeroImg />
     </section>
     <section id="blog" class="mt-16 px-6 md:px-12">
-      <div >
+      <div>
         <H2>
           <p slot="screensm">ARTICLES.</p>
           <p slot="screenxl">Published Articles</p>
@@ -27,9 +27,9 @@ const articles = await getCollection("article");
         {
           articles.map((info, i) => {
             return (
-              <ArticleCard info={info.data}>
-                <Img imgSrc={cover} imgAlt={"coverImg"} />
-              </ArticleCard>
+              <a href={info.data.url} target="_blank" rel="noopener noreferrer" class="flex">
+                <ArticleCard info={info.data}/>
+              </a>
             );
           })
         }

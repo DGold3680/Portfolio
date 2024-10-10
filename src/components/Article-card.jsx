@@ -1,14 +1,14 @@
 import Tags from "./Tags";
 
-export default function ArticleCard({ info = {}, children }) {
-  const { title, date, tags, url, excerpt, readTime, tagColor } = info;
+export default function ArticleCard({ info = {} }) {
+  const { title, date, tags, url, excerpt, readTime, tagColor ,coverImg} = info;
 
   return (
     <div
       style={{ boxShadow: "0 0 8px rgba(70, 69, 69, 0.6)" }}
-      className="mb-10 px-6 pt-10 flex items-center rounded-2xl"
+      className="mb-10 px-6 flex items-center rounded-2xl"
     >
-      <div className="basis-full ">
+      <div className="basis-full py-6 ">
         <div className="flex items-center mb-4">
           <span
             style={{ backgroundColor: `${tagColor}` }}
@@ -19,7 +19,7 @@ export default function ArticleCard({ info = {}, children }) {
           </span>
         </div>
 
-        <a
+        <a target="_blank"
           href={url}
           className="mb-4 inline-block underline mr-5 text-white text-base font-sm"
         >
@@ -31,7 +31,9 @@ export default function ArticleCard({ info = {}, children }) {
         </div>
       </div>
       <div className="w-full flex justify-end lg:mr-20 ">
-        <div className="w-5/6 lg:w-2/3">{children}</div>
+        <div className="w-5/6 lg:w-2/3 my-auto py-5">
+          <img className=" rounded-lg" src={`${coverImg}`} alt={`${coverImg}`} />
+        </div>
       </div>
     </div>
   );
