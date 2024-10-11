@@ -45,7 +45,7 @@ export default function BlogCard({ info = {} }) {
             style={{ backgroundColor: `${tagColor}` }}
             className={`inline-block rounded-full w-5 h-5 mr-5`}
           ></span> */}
-          <div className="mt-4">
+          <div className="">
             <img
               className="rounded-full w-12 h-12 md:w-16 md:h-16"
               src={`${authorImg}`}
