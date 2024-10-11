@@ -15,7 +15,9 @@ const navLinks = ["About", "Project", "Blog", "Contact"];
           return (
             <li>
               <a
-                href={`/#${navLink.toLowerCase()}`}
+                href={
+                  navLink == "Blog" ? "/blog" : `/#${navLink.toLowerCase()}`
+                }
                 class="nav-link sm:mx-3 mx-6 hover:text-white active:text-white focus:text-white"
               >
                 {navLink}
@@ -26,7 +28,11 @@ const navLinks = ["About", "Project", "Blog", "Contact"];
       }
       <li class="ml-10">
         <li class="ml-10">
-          <a href="https://docs.google.com/document/d/1_G6-iSyikpirH0tUwm5CEIaurGWmfJ-nJd8oUNBbfUQ/edit?tab=t.0/view" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docs.google.com/document/d/1_G6-iSyikpirH0tUwm5CEIaurGWmfJ-nJd8oUNBbfUQ/edit?tab=t.0/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BtnMain>Resume</BtnMain>
           </a>
         </li>

@@ -1,7 +1,7 @@
 ---
 title: "Implementing Global Location Search for your Next.js App"
 author: "David Paul-Afodi"
-authorImg: "/images/john-doe.jpg"
+authorImg: "/dp.png"
 coverImg: "/cover_images/Implementing_Global_Location_Search_for_your_Next.js_App.png"
 date: 2024-03-01
 tags: ["Nextjs", "Google Maps","Geolocation"]
@@ -10,27 +10,3 @@ excerpt: "In the dynamic landscape of travel applications, incorporating a versa
 readTime: 12
 tagColor: "#007CED"
 ---
-
-# Healthy Eating Habits
-
-
-**Author:** Nutrition Expert
-
-
-**Published Date:** October 25, 2023
-
-[Content of the article goes here...]
-
-[Content of the article goes here...]
-
-In this article, we explore the principles of healthy eating, provide tips on balanced nutrition, and offer delicious recipes for a nutritious lifestyle.
-
-## Balanced Nutrition
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, risus vel bibendum volutpat, nulla neque tristique ipsum.
-
-## Delicious and Nutritious Recipes
-
-Suspendisse venenatis, lectus eget iaculis ullamcorper, dui libero volutpat elit, vel auctor libero purus a ligula.
-
-[More healthful insights...]

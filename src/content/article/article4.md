@@ -1,7 +1,7 @@
 ---
 title: "Demystifying Browser Fingerprinting: What You Need to Know"
 author: "David Paul-Afodi"
-authorImg: "/images/john-doe.jpg"
+authorImg: "/dp.png"
 coverImg: "/cover_images/Demystifying_Browser_Fingerprinting_What_You_Need_to_Know.png"
 date: 2023-12-29
 tags: ["Web Security", "Tracking"]
@@ -10,26 +10,3 @@ excerpt: "In today’s digital world, online privacy is a growing concern for us
 readTime: 8
 tagColor: "#F2B932"
 ---
-
-# Traveling the World
-
-**Author:** Globe-Trotter
-
-
-**Published Date:** October 30, 2023
-
-[Content of the article goes here...]
-
-[Content of the article goes here...]
-
-In this article, we embark on a globetrotting adventure, visiting exotic destinations, experiencing diverse cultures, and discovering the world's hidden gems.
-
-## Exotic Destinations
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ligula. Aenean ac ante vel urna suscipit hendrerit.
-
-## Cultural Encounters
-
-Suspendisse venenatis, lectus eget iaculis ullamcorper, dui libero volutpat elit, vel auctor libero purus a ligula.
-
-[More travel tales...]

@@ -1,38 +1,12 @@
 ---
-title: "Running JavaScript Promises in Parallel"
+title: "Creating a Responsive NavBar with Semantic-UI-React"
 author: "David Paul-Afodi"
-authorImg: "/images/john-doe.jpg"
-coverImg: "/cover_images/Running_JavaScript_Promises_in_Parallel.png"
-date: 2023-01-26
-tags: ["Asynchrounous Js", "Promises"]
-url: https://blog.openreplay.com/promises-in-parallel/
-excerpt: "Behind the scenes of nearly every digital ecosystem lies a humble CSV file, quietly orchestrating data flow with precision and efficiency. While other formats clamor for attention with their flashy features, CSV files remain steadfast in their simplicity and reliability - the unsung heroes of data management. This article explores CSV work using a powerful tool called PapaParse."
-readTime: 11
-tagColor: "#F2B932"
+authorImg: "/dp.png"
+coverImg: "/cover_images/Creating_a_responsive_NavBar_with_Semantic-UI-React.png"
+date: 2022-12-22
+tags: ["Semantic-UI-React", "Responsive design","navigation bar"]
+url: https://blog.openreplay.com/creating-a-responsive-navbar-with-semantic-ui-react/
+excerpt: "Responsive navbars are among the bread and butter of front-end development. A common practice is a navbar on desktop and a sidebar on mobile. This is probably very easy to implement with your favorite CSS frameworks. Still, it turns out to be either quite tricky or downright difficult when using the semantic-UI-react framework(which, except for this little quirk, is an amazing framework). With little to no readily available solutions at the time of writing, this article is a demo of how to build a responsive navbar with react, semantic-UI-react, and react-responsive.."
+readTime: 6
+tagColor: "#007CED"
 ---
-
-# Sample Markdown Article
-
-
-**Author:** John Doe
-
-
-**Published Date:** October 15, 2023
-
-## Introduction
-
-This is a sample Markdown article written by John Doe. It covers various topics related to technology and web development. In this article, we will discuss key concepts and best practices in the industry.
-
-## Section 1: Technology Trends
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ligula. Aenean ac ante vel urna suscipit hendrerit. Proin consectetur ante a justo ullamcorper, a bibendum elit aliquet. Nam tincidunt, risus vel bibendum volutpat, nulla neque tristique ipsum.
-
-## Section 2: Web Development Best Practices
-
-Suspendisse venenatis, lectus eget iaculis ullamcorper, dui libero volutpat elit, vel auctor libero purus a ligula. Sed ac ultricies ligula. Nam tincidunt, risus vel bibendum volutpat, nulla neque tristique ipsum.
-
-## Conclusion
-
-In conclusion, this article provides valuable insights into the latest technology trends and best practices in web development. Stay updated with the ever-changing landscape of the tech industry.
-
-**Tags:** Technology, Web Development
